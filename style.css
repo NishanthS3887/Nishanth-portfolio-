@@ -14,6 +14,41 @@ header { background: rgba(0,0,0,0.7); padding:20px; position: sticky; top:0; z-i
 #hero { height:90vh; display:flex; justify-content:center; align-items:center; text-align:center;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?code,technology') center/cover no-repeat; 
 }
+/* Mode */
+/* Default: Dark Mode */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+nav a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+body.light-mode nav a {
+  color: #111111;
+}
+
+/* Example button */
+button {
+  background-color: #222;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+body.light-mode button {
+  background-color: #ddd;
+  color: #111;
+}
+
 .profile-photo {
   width: 150px;
   height: 150px;
